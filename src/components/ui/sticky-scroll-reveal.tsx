@@ -1,8 +1,8 @@
-"use client";
 import React, { useRef } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
 import { cn } from "@/utils/cn";
+import Image from "next/image";
 
 export const StickyScroll = ({
   content,
@@ -21,8 +21,6 @@ export const StickyScroll = ({
   const [activeCard, setActiveCard] = React.useState(0);
   const ref = useRef<any>(null);
   const { scrollYProgress } = useScroll({
-    // uncomment line 22 and comment line 23 if you DONT want the overflow container and want to have it change on the entire page scroll
-    // target: ref
     container: ref,
     offset: ["start start", "end start"],
   });
@@ -43,25 +41,9 @@ export const StickyScroll = ({
     setActiveCard(closestBreakpointIndex);
   });
 
-  const backgroundColors = [
-    // "var(--slate-900)",
-    "var(--black)",
-    // "var(--neutral-900)",
-    "rgba(0, 0, 0, 0.05)",
-  ];
-  const linearGradients = [
-    "linear-gradient(to bottom right, var(--cyan-500), var(--emerald-500))",
-    "linear-gradient(to bottom right, var(--pink-500), var(--indigo-500))",
-    "linear-gradient(to bottom right, var(--orange-500), var(--yellow-500))",
-    "linear-gradient(to bottom right, var(--purple-500), var(--teal-500))",
-    "linear-gradient(to bottom right, var(--cyan-500), var(--emerald-500))",
-  ];
   return (
     <motion.div
-      animate={{
-        backgroundColor: backgroundColors[activeCard % backgroundColors.length],
-      }}
-      className="h-[30rem] overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10"
+      className="h-[25rem] overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10"
       ref={ref}
     >
       <div className="div relative flex items-start px-4">
@@ -99,15 +81,17 @@ export const StickyScroll = ({
         </div>
       </div>
       <motion.div
-        animate={{
-          background: linearGradients[activeCard % linearGradients.length],
-        }}
         className={cn(
-          "hidden lg:block h-60 w-80 rounded-md bg-white sticky top-10 overflow-hidden",
+          "hidden lg:block h-[15rem] w-[30rem] rounded-md bg-white sticky top-10 overflow-hidden",
           contentClassName
         )}
       >
-        {content[activeCard].content ?? null}
+        <Image
+          src={`/workexperience/${activeCard + 1}.png`} // Assuming your images are named 1.png, 2.png, 3.png, ...
+          alt={`Image ${activeCard}`}
+          layout="fill"
+          objectFit="cover" // Ensure the entire container is covered by the image
+        />
       </motion.div>
     </motion.div>
   );
