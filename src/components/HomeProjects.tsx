@@ -38,13 +38,13 @@ export const products = [
     title: "Personal Portfolio",
     link: "https://adi-gitx.vercel.app/",
     thumbnail: "/courses/personalportfolio.png",
-  }, 
+  },
   {
     title: "Thinkyfy App",
     link: "https://thinkyfy.vercel.app/",
     thumbnail: "/courses/thinkyfy.png",
-  },     
-  
+  },
+
   {
     title: "TRIPWHIZ",
     link: "https://tripwhizx.vercel.app/",
@@ -80,12 +80,12 @@ export const products = [
   title: "Personal Portfolio",
   link: "https://adi-gitx.vercel.app/",
   thumbnail: "/courses/personalportfolio.png",
-  }, 
+  },
 {
   title: "Thinkyfy App",
   link: "https://Adityakammatiportfolio.vercel.app/",
   thumbnail: "/courses/thinkyfy.png",
-},     
+},
 
 ];
 
