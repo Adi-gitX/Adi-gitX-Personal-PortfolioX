@@ -71,6 +71,18 @@
       "livelink": "https://tic-tac-toe-xgame.vercel.app/",
       "isFeatured": true,
       "image": "/courses/tictactoe.png"
+    },
+    {
+      "id": 7,
+      "title": "Thinkyfy App",
+      "slug": "Our first Hackathon project",
+      "description": "A simple social media app that have leaderboard and management of all your coding platforms",
+      "price": 149.99,
+      "instructor": "Adityakammati, manish kumar, prashanth, somyarangan behara",
+      "github": "https://github.com/Adi-gitX/thinkyfy",
+      "livelink": "https://thinkyfy.vercel.app/",
+      "isFeatured": true,
+      "image": "/courses/thinkyfy.png"
     }
   ]
 }

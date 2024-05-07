@@ -36,9 +36,14 @@ export const products = [
   },
   {
     title: "Personal Portfolio",
-    link: "https://Adityakammatiportfolio.vercel.app/",
+    link: "https://adi-gitx.vercel.app/",
     thumbnail: "/courses/personalportfolio.png",
-    },  
+  }, 
+  {
+    title: "Thinkyfy App",
+    link: "https://thinkyfy.vercel.app/",
+    thumbnail: "/courses/thinkyfy.png",
+  },     
   
   {
     title: "TRIPWHIZ",
@@ -73,9 +78,14 @@ export const products = [
   },
   {
   title: "Personal Portfolio",
-  link: "https://Adityakammatiportfolio.vercel.app/",
+  link: "https://adi-gitx.vercel.app/",
   thumbnail: "/courses/personalportfolio.png",
-  },  
+  }, 
+{
+  title: "Thinkyfy App",
+  link: "https://Adityakammatiportfolio.vercel.app/",
+  thumbnail: "/courses/thinkyfy.png",
+},     
 
 ];
 
