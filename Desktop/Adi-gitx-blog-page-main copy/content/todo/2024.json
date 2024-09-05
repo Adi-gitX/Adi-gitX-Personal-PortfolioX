@@ -1,0 +1,35 @@
+{
+  "todo": [
+    { "desc": "Survive" },
+    {"desc": "Learn Kubernetes"},
+    {"desc": "Learn Flutter"},
+    {"desc": "Learn Docker"},
+    {"desc": "Learn Three.js"},
+    {"desc": "Learn Blender"},
+    {"desc": "Learn Flutter"},
+    {"desc": "Learn NLP"},
+    { "desc": "Become an Hpair Deligate","done":true },
+    { "desc": "Travel to a Country (Done-BANGKOK)","done":true },
+    { "desc": "Complete data structures and algorithms course" },
+    { "desc": "Participate in the 100 days LeetCode challenge","done": true },
+    { "desc": "Learn basic web development: HTML, CSS, and JavaScript",
+    "done": true
+    },
+    {"desc": "Learn a completely different tech stack or any other skill that defines you and makes you feel unique."},
+    { "desc": "Complete course on React.js" },
+    { "desc": "Complete course on Node.js and Next.js" },
+    { "desc": "Complete Foundations of Cybersecurity course from Google" },
+    {"desc": "Work on an advanced personal portfolio",
+      "url": "https://Adi-gitX.vercel.app",
+      "done": true
+    },
+    { "desc": "Develop an advanced blog and repository page" },
+    { "desc": "Contribute to Google Summer of Code (GSoC)" },
+    { "desc": "Participate in a hackathon at college (NST) by Google",
+    "done": true
+  },
+    { "desc": "Start freelancing in web development" },
+    { "desc": "Start freelancing in video editing" },
+    { "desc": "Start development of a fully functional ecommerce site" }
+  ]
+}
